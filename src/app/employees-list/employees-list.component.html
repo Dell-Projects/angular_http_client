@@ -29,12 +29,15 @@
                         <td>{{employee.phone}}</td>
                         <td>
                             <span class="edit" routerLink="/employee-edit/{{employee.id}}">Edit</span>
+                            <span> / </span>
                             <span class="delete" (click)="deleteEmployee(employee.id)">Delete</span>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
+        <p routerLink="/create-employee">Back to create</p>
 
     </div>
 
