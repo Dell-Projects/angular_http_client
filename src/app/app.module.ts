@@ -14,14 +14,14 @@ import { FormsModule } from '@angular/forms';
 // Components
 import { EmployeeCreateComponent } from './employee-create/employee-create.component';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeesListComponent } from './employees-list/employees-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeCreateComponent,
     EmployeeEditComponent,
-    EmployeeListComponent
+    EmployeesListComponent
   ],
   imports: [
     BrowserModule,
