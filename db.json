@@ -1,0 +1,28 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "Luis",
+            "email": "pereir4@live.com",
+            "phone": "998651657"
+        },
+        {
+            "id": 2,
+            "name": "Ilseu",
+            "email": "ilseu@colling.com",
+            "phone": "065165"
+        },
+        {
+            "id": 3,
+            "name": "Felipe",
+            "email": "felipe@cabreiro.com",
+            "phone": "984915"
+        },
+        {
+            "id": 4,
+            "name": "Lucca",
+            "email": "lucca@santos.com",
+            "phone": "6516816"
+        }
+    ]
+}
