@@ -13,7 +13,7 @@ export class RestApiService {
   // Define API
   apiURL = 'http://localhost:3000';
 
-  constructor(private http: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   // CRUD Methods for consuming REST API
 
@@ -26,7 +26,7 @@ export class RestApiService {
 
   // HttpClient API get() method => Fetch employees list
   getEmployees(): Observable<Employee> {
-    return this.http.get<Employee>(this.apiURL + '/employees')
+    return this.httpClient.get<Employee>(this.apiURL + '/employees')
     .pipe(
       retry(1),
       catchError(this.handleError)
@@ -35,7 +35,7 @@ export class RestApiService {
 
   // HttpClient API get() method => Fetch employee
   getEmployee(id): Observable<Employee> {
-    return this.http.get<Employee>(this.apiURL + '/employees/' + id)
+    return this.httpClient.get<Employee>(this.apiURL + '/employees/' + id)
     .pipe(
       retry(1),
       catchError(this.handleError)
@@ -44,7 +44,7 @@ export class RestApiService {
 
   // HttpClient API post() method => Create employee
   createEmployee(employee): Observable<Employee> {
-    return this.http.post<Employee>(this.apiURL + '/employees', JSON.stringify(employee), this.httpOptions)
+    return this.httpClient.post<Employee>(this.apiURL + '/employees', JSON.stringify(employee), this.httpOptions)
     .pipe(
       retry(1),
       catchError(this.handleError)
@@ -53,7 +53,7 @@ export class RestApiService {
 
   // HttpClient API put() method => Update employee
   updateEmployee(id, employee): Observable<Employee> {
-    return this.http.put<Employee>(this.apiURL + '/employees/' + id, JSON.stringify(employee), this.httpOptions)
+    return this.httpClient.put<Employee>(this.apiURL + '/employees/' + id, JSON.stringify(employee), this.httpOptions)
     .pipe(
       retry(1),
       catchError(this.handleError)
@@ -62,7 +62,7 @@ export class RestApiService {
 
   // HttpClient API delete() method => Delete employee
   deleteEmployee(id){
-    return this.http.delete<Employee>(this.apiURL + '/employees/' + id, this.httpOptions)
+    return this.httpClient.delete<Employee>(this.apiURL + '/employees/' + id, this.httpOptions)
     .pipe(
       retry(1),
       catchError(this.handleError)
