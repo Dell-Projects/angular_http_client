@@ -9,7 +9,7 @@ import { RestApiService } from "../shared/rest-api.service";
 })
 export class EmployeeCreateComponent implements OnInit {
 
-  @Input() employeeDetails = { name: '', email: '', phone: 0 }
+  @Input() employeeDetails = { name: '', email: '', phone: '' }
 
   constructor(
     public restApi: RestApiService, 
