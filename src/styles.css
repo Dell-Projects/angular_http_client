@@ -14,3 +14,9 @@
 .center-button {
     text-align: center;
 }
+
+.divider{
+    width:10px;
+    height:auto;
+    display:inline-block;
+}

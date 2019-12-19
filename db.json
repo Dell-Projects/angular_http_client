@@ -9,32 +9,20 @@
     {
       "id": 2,
       "name": "Felipe",
-      "email": "pereir4@live.com",
+      "email": "felipe@cabreiro.com",
       "phone": "998651657"
     },
     {
       "id": 3,
       "name": "Lucca",
-      "email": "pereir4@live.com",
+      "email": "lucca@santos.com",
       "phone": "998651657"
     },
     {
       "id": 4,
       "name": "Ilseu",
-      "email": "pereir4@live.com",
-      "phone": "998651657"
-    },
-    {
-      "name": "PUT test",
-      "email": "tralala",
-      "phone": "1365498",
-      "id": 5
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "id": 6
+      "email": "ilseu@coleng.com",
+      "phone": "1691321"
     }
   ]
 }
