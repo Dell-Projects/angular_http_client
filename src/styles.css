@@ -1,3 +1,12 @@
+.list-container {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -25%);
+}
+
 .create-container {
     width: 300px;
     height: 300px;
